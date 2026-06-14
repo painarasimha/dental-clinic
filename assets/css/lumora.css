@@ -9064,3 +9064,21 @@ figure {
     order: -9999;
   }
 }
+
+/* ===== Hero lead/callback form ===== */
+.lead-form_card{margin-top:24px;max-width:430px;background:#fff;border-radius:20px;padding:24px 24px 20px;box-shadow:0 28px 70px rgba(2,47,52,.30);}
+.lead-form_title{font-family:var(--font,'Sora',sans-serif);font-size:21px;font-weight:600;color:var(--primitive-color--primary-900,#011f23);letter-spacing:-.4px;}
+.lead-form_sub{font-size:14px;color:#5d6c7b;margin-top:3px;}
+.lead-form{display:flex;flex-direction:column;gap:11px;margin-top:16px;}
+.lead-form_input{height:50px;border:1px solid #e4e8ea;border-radius:12px;padding:0 16px;font-family:inherit;font-size:15px;color:#011f23;outline:none;background:#fafcfc;transition:border-color .2s,background .2s;}
+.lead-form_input::placeholder{color:#9aa6ad;}
+.lead-form_input:focus{border-color:var(--primitive-color--primary-500,#24a3b1);background:#fff;}
+.lead-form_btn{height:52px;border:none;border-radius:999px;background:var(--primitive-color--primary-900,#011f23);color:#fff;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer;transition:transform .15s ease,background .2s ease;}
+.lead-form_btn:hover{background:var(--primitive-color--primary-500,#24a3b1);transform:translateY(-1px);}
+.lead-form_note{font-size:12px;color:#9aa6ad;text-align:center;margin-top:2px;}
+@media (max-width:991px){.lead-form_card{max-width:100%;}}
+
+/* ===== Closing CTA photo section + footer polish ===== */
+.section_cta{position:relative;background-image:linear-gradient(115deg, rgba(1,31,35,.93), rgba(1,31,35,.72)), url('../img/gen_about-hero-image.jpg');background-size:cover;background-position:center;}
+.footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
+footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
