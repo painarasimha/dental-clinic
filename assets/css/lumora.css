@@ -9126,3 +9126,12 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 
 /* Safety: reveal/portrait/blog images must never stay blurred (no leftover IX2 blur) */
 .team_image,.blog-item_image,.our-story_image,.about-hero_image,.home-value_image{filter:none !important;-webkit-filter:none !important;}
+
+
+/* ===== Text wordmark brand (replaces the old fixed-width logo image) — 2026-06-25 =====
+   The old logo was a ~140px image; the wordmark text is wider, so size the brand
+   container to its content and shrink the type a touch so it never collides with the
+   nav menu. Shared CSS => applies to the root site AND every client copy. */
+.navbar_logo{max-width:none !important;flex:0 0 auto;margin-right:28px;}
+.navbar_logo .logo_image{font-size:1.18rem !important;}
+@media screen and (max-width:991px){.navbar_logo .logo_image{font-size:1.05rem !important;}}
