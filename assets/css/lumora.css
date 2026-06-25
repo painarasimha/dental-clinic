@@ -9128,10 +9128,10 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
 .team_image,.blog-item_image,.our-story_image,.about-hero_image,.home-value_image{filter:none !important;-webkit-filter:none !important;}
 
 
-/* ===== Text wordmark brand (replaces the old fixed-width logo image) — 2026-06-25 =====
-   The old logo was a ~140px image; the wordmark text is wider, so size the brand
-   container to its content and shrink the type a touch so it never collides with the
-   nav menu. Shared CSS => applies to the root site AND every client copy. */
-.navbar_logo{max-width:none !important;flex:0 0 auto;margin-right:28px;}
-.navbar_logo .logo_image{font-size:1.18rem !important;}
-@media screen and (max-width:991px){.navbar_logo .logo_image{font-size:1.05rem !important;}}
+/* ===== Text wordmark brand fix (2026-06-25) =====
+   Old brand was an image sized by width:100% + max-width:140px. The wordmark is text,
+   so size the brand box to its CONTENT (width:auto) — never 100% (which ate the navbar)
+   and never a 140px cap (which clipped/overlapped the menu). Shared CSS => root + clients. */
+.navbar_logo{width:auto !important;max-width:none !important;flex:0 0 auto;margin-right:24px;}
+.navbar_logo .logo_image{font-size:1.3rem !important;}
+@media screen and (max-width:991px){.navbar_logo .logo_image{font-size:1.1rem !important;}}
